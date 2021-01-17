@@ -21,7 +21,7 @@ class Tab {
             // 保存下标为index属性
             this.lis[i].index = i;
             this.lis[i].onclick = this.toggleTab;
-            this.remove[i].onclick = this.removeTab;//父一级有索引
+            this.remove[i].onclick = this.removeTab; // 父一级有索引
             this.spans[i].ondblclick = this.editTab;
             // this.sections[i].ondblclick = this.editTab;
             this.sectionSpans[i].ondblclick = this.editTab;
@@ -80,8 +80,8 @@ class Tab {
     }
     //4.修改功能
     editTab(e) {
-        // this指向section span & li span
-        var str = this.innerHTML;//this指向span，因为span双击事件调用此函数
+        // this指向section span & li span 双击事件调用此函数
+        var str = this.innerHTML;
         //双击禁止选定文字
         window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
         this.innerHTML = '<input type="text" />';
