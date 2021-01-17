@@ -87,7 +87,8 @@ class Tab {
         this.innerHTML = '<input type="text" />';
         var input = this.children[0];//获取到span第一个子元素input
         input.value = str;
-        input.select();//让文本框里面的文字处于选中状态
+        //让文本框里面的文字处于选中状态
+        input.select();
         //当我们离开文本框，就把文本框里面的值给span
         input.onblur = function() {
             this.parentNode.innerHTML = this.value;
