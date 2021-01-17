@@ -1,6 +1,6 @@
 var that;
 class Tab {
-    constructor(id) {//接收new出来的实例对象传过来的参数
+    constructor(id) { //  接收new出来的实例对象传过来的参数
         //获取元素
         that = this;
         this.main = document.querySelector(id);
